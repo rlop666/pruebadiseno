@@ -97,7 +97,14 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/w3.js"></script>
-    
+    <script>
+      function llamaReady(){
+        functionReady();
+      }
+    </script>
+    <script>
+      w3.includeHTML(llamaReady);
+    </script>
     <script>
           $("#mostrar").click(function(){
               $("#sabermas").toggle(300);
